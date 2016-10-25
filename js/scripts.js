@@ -1,3 +1,4 @@
+//CREATE ALL OF THE VARIABLES 
 var input = document.getElementById("input");
 var submit = document.getElementById("submit");
 var output = document.getElementById("output");
