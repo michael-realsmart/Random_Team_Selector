@@ -1,0 +1,187 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,300,600,700);
+
+/* body and heading styles */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fe8c00+1,f83600+100 */
+	background: #fe8c00; /* Old browsers */
+	background: -moz-linear-gradient(left,  #fe8c00 1%, #f83600 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #fe8c00 1%,#f83600 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #fe8c00 1%,#f83600 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe8c00', endColorstr='#f83600',GradientType=1 ); /* IE6-9 */
+	color: #fff;
+	font-size: 1.2em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+  select,
+  textarea,
+  input {
+    font-size: 16px;
+  }
+}
+
+#brandTitle {
+	text-transform: uppercase;
+	font-weight: 300;
+	color: #fff;
+	letter-spacing: 8px;
+}
+
+#subBrand {
+	text-transform: uppercase;
+	font-weight: 300;
+	color: #fff;
+	letter-spacing: 4px;
+    font-size: 12px;
+}
+
+.brandLogo {
+	text-align: center;
+	padding: 50px 0 0 0;
+}
+
+.brandLogo img {
+	max-width: 50px;
+}
+
+#headSection h1, #headSection h4, #enterNames, #teamColorRed, #teamColorBlue {
+	text-align: center;
+} 
+
+#teamColorRed {
+	background-color: #fff;
+	padding: 5rem 0;
+}
+
+#teamColorRed h2, #teamColorRed p, #teamColorRed ul li  {
+	color: #fe8c00;
+}
+
+#teamColorRed h2, #teamColorBlue h2 {
+	text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 4px;
+    font-size: 26px;
+}
+
+#teamColorBlue {
+	background: #fe8c00; /* Old browsers */
+	background: -moz-linear-gradient(left,  #fe8c00 1%, #f83600 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #fe8c00 1%,#f83600 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #fe8c00 1%,#f83600 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe8c00', endColorstr='#f83600',GradientType=1 ); /* IE6-9 */
+	padding: 5rem 0;
+}
+
+#teamColorBlue h2, #teamColorBlue p, #teamColorBlue ul li {
+	color: #fff;
+}
+
+#headSection{
+	padding: 5rem 0;
+}
+
+#headSection hr {
+	width: 5%;
+	border-top: 3px solid #fff;
+}
+
+#enterNames {
+	margin-bottom: 3rem;
+}
+
+#enterNames input {
+	border-radius: 0;
+	background-color: rgba(175, 35, 1, 0.4);
+	padding: 10px 15px;
+	border: none;
+	color: #fff;
+}
+
+::-webkit-input-placeholder {
+   color: rgba(255, 255, 255, 0.5);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: rgba(255, 255, 255, 0.5);  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: rgba(255, 255, 255, 0.5); 
+}
+
+:-ms-input-placeholder {  
+   color: rgba(255, 255, 255, 0.5); 
+}
+
+.addingPlayers {
+	padding: 3rem 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+ol {
+	text-align: left;
+}
+
+.playerList {
+	font-weight: 300;
+	color: #fff;
+	letter-spacing: 4px;
+}
+
+#output li, #teamBlue li, #teamRed li {
+	padding: 0.5rem 0;
+    margin: 0 3rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#teamRed ul, #teamRed li, #teamBlue ul, #teamBlue li {
+	list-style-type: none;
+	text-align: left;
+}
+
+#teamRed span {
+	padding-right: 10px;
+	color: #fe8c00;
+}
+
+#teamBlue span {
+	padding-right: 10px;
+	color: #fff;
+}
+
+.random {
+	border-radius: 0;
+	padding: 10px 15px;
+	background-color: rgba(175, 35, 1, 0.4);
+	border: solid 1px transparent;
+	margin: 1rem 0;
+	font-size: 16px;
+	border: none;
+}
+
+.randomLink, .randomLink:hover, .randomLink:active, .randomLink:visited  {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+.random:hover  {
+	color: #fa9376;
+}
+
