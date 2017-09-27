@@ -1,0 +1,76 @@
+#enterNames {
+  margin-bottom: 3rem;
+}
+
+#enterNames input {
+  border-radius: 0;
+  background-color: rgba(175, 35, 1, 0.4);
+  padding: 10px 15px;
+  border: none;
+  color: #fff;
+}
+
+::-webkit-input-placeholder {
+   color: rgba(255, 255, 255, 0.5);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: rgba(255, 255, 255, 0.5);  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: rgba(255, 255, 255, 0.5); 
+}
+
+:-ms-input-placeholder {  
+   color: rgba(255, 255, 255, 0.5); 
+}
+
+.addingPlayers {
+  padding: 3rem 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+ol {
+  text-align: left;
+}
+
+.playerList {
+  font-weight: 300;
+  color: #fff;
+  letter-spacing: 4px;
+}
+
+#output li {
+  padding: 0.5rem 0;
+  margin: 0 3rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.random {
+  border-radius: 0;
+  padding: 10px 15px;
+  background-color: rgba(175, 35, 1, 0.4);
+  border: solid 1px transparent;
+  margin: 1rem 0;
+  font-size: 16px;
+  border: none;
+}
+
+.randomLink, .randomLink:hover, .randomLink:active, .randomLink:visited  {
+  color: #fff;
+  text-decoration: none;
+}
+
+.random:hover  {
+  color: #fa9376;
+}

@@ -1,0 +1,26 @@
+@import url(./css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,300,600,700);
+body {
+  font-family: 'Open Sans', sans-serif;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fe8c00+1,f83600+100 */
+  background: #fe8c00;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #fe8c00 1%, #f83600 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #fe8c00 1%, #f83600 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #fe8c00 1%, #f83600 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe8c00', endColorstr='#f83600',GradientType=1 );
+  /* IE6-9 */
+  color: #fff;
+  font-size: 1.2em; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select,
+  textarea,
+  input {
+    font-size: 16px; } }

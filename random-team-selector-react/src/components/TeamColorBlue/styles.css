@@ -1,0 +1,37 @@
+#teamColorBlue h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 4px;
+  font-size: 26px; }
+
+#teamColorBlue {
+  background: #fe8c00;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #fe8c00 1%, #f83600 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #fe8c00 1%, #f83600 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #fe8c00 1%, #f83600 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe8c00', endColorstr='#f83600',GradientType=1 );
+  /* IE6-9 */
+  padding: 5rem 0; }
+
+#teamColorBlue h2, #teamColorBlue p, #teamColorBlue ul li {
+  color: #fff; }
+
+#teamBlue li {
+  padding: 0.5rem 0;
+  margin: 0 3rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+#teamBlue ul, #teamBlue li {
+  list-style-type: none;
+  text-align: left; }
+
+#teamBlue span {
+  padding-right: 10px;
+  color: #fff; }

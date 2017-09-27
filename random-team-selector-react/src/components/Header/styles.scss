@@ -1,0 +1,36 @@
+#brandTitle {
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #fff;
+  letter-spacing: 8px;
+}
+
+#subBrand {
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #fff;
+  letter-spacing: 4px;
+  font-size: 12px;
+}
+
+.brandLogo {
+  text-align: center;
+  padding: 50px 0 0 0;
+}
+
+.brandLogo img {
+  max-width: 50px;
+}
+
+#headSection h1, #headSection h4, #enterNames, #teamColorRed, #teamColorBlue {
+  text-align: center;
+}
+
+#headSection{
+  padding: 5rem 0;
+}
+
+#headSection hr {
+  width: 5%;
+  border-top: 3px solid #fff;
+}
