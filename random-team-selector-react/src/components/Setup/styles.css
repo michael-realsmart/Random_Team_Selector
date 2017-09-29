@@ -1,9 +1,24 @@
-#enterNames {
-  margin-bottom: 3rem; }
+#setup {
+  margin-bottom: 3rem;
+  text-align: center; }
 
-#enterNames input {
+.oldPlayersList button {
+  background-color: rgba(175, 35, 1, 0.4);
+  border: none;
+  color: #fff;
+  display: inline-block;
+  margin-right: 2px;
+  padding: 6px 10px; }
+  .oldPlayersList button:hover {
+    background-color: rgba(175, 35, 1, 0.6); }
+  .oldPlayersList button:disabled {
+    opacity: 0.75;
+    pointer-events: none; }
+
+#setup input {
   border-radius: 0;
   background-color: rgba(175, 35, 1, 0.4);
+  margin-right: 4px;
   padding: 10px 15px;
   border: none;
   color: #fff; }
@@ -34,10 +49,20 @@ button:focus {
 ol {
   text-align: left; }
 
-.playerList {
+.playerList h3, .oldPlayersList h3 {
   font-weight: 300;
   color: #fff;
   letter-spacing: 4px; }
+
+.playerList button {
+  background-color: rgba(175, 35, 1, 0.4);
+  border: none;
+  display: block;
+  float: right;
+  padding: 0 6px;
+  text-align: center; }
+  .playerList button:hover {
+    background-color: rgba(175, 35, 1, 0.6); }
 
 #output li {
   padding: 0.5rem 0;
@@ -47,7 +72,7 @@ ol {
   letter-spacing: 2px;
   text-transform: uppercase; }
 
-.random {
+.randomizeBtn {
   border-radius: 0;
   padding: 10px 15px;
   background-color: rgba(175, 35, 1, 0.4);
@@ -55,10 +80,8 @@ ol {
   margin: 1rem 0;
   font-size: 16px;
   border: none; }
-
-.randomLink, .randomLink:hover, .randomLink:active, .randomLink:visited {
-  color: #fff;
-  text-decoration: none; }
-
-.random:hover {
-  color: #fa9376; }
+  .randomizeBtn:hover {
+    background-color: rgba(175, 35, 1, 0.6); }
+  .randomizeBtn:disabled {
+    opacity: 0.75;
+    pointer-events: none; }

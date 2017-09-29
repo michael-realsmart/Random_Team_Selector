@@ -1,10 +1,13 @@
-#teamColorBlue h2 {
+#teamColours {
+  text-align: center; }
+
+#teamColours h2 {
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 4px;
   font-size: 26px; }
 
-#teamColorBlue {
+#teamColours {
   background: #fe8c00;
   /* Old browsers */
   background: -moz-linear-gradient(left, #fe8c00 1%, #f83600 100%);
@@ -17,10 +20,10 @@
   /* IE6-9 */
   padding: 5rem 0; }
 
-#teamColorBlue h2, #teamColorBlue p, #teamColorBlue ul li {
+#teamColours h2, #teamColours p, #teamColours ul li {
   color: #fff; }
 
-#teamBlue li {
+#teamColoursPlayers li {
   padding: 0.5rem 0;
   margin: 0 3rem;
   font-size: 1.5rem;
@@ -28,10 +31,10 @@
   letter-spacing: 2px;
   text-transform: uppercase; }
 
-#teamBlue ul, #teamBlue li {
+#teamColoursPlayers ul, #teamColoursPlayers li {
   list-style-type: none;
   text-align: left; }
 
-#teamBlue span {
+#teamColoursPlayers span {
   padding-right: 10px;
   color: #fff; }
