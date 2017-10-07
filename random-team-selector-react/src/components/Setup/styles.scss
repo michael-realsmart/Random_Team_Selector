@@ -3,51 +3,6 @@
   text-align: center;
 }
 
-.oldPlayersList {
-  button {
-    background-color: rgba(175, 35, 1, 0.4);
-    border: none;
-    color: #fff;
-    display: inline-block;
-    margin-right: 2px;
-    padding: 6px 10px;
-
-    &:hover {
-      background-color: rgba(175, 35, 1, 0.6);
-    }
-
-    &:disabled {
-      opacity: 0.75;
-      pointer-events: none;
-    }
-  }
-}
-
-#setup input {
-  border-radius: 0;
-  background-color: rgba(175, 35, 1, 0.4);
-  margin-right: 4px;
-  padding: 10px 15px;
-  border: none;
-  color: #fff;
-}
-
-::-webkit-input-placeholder {
-   color: rgba(255, 255, 255, 0.5);
-}
-
-:-moz-placeholder { /* Firefox 18- */
-   color: rgba(255, 255, 255, 0.5);  
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-   color: rgba(255, 255, 255, 0.5); 
-}
-
-:-ms-input-placeholder {  
-   color: rgba(255, 255, 255, 0.5); 
-}
-
 .addingPlayers {
   padding: 3rem 0;
 }

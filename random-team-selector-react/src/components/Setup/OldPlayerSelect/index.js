@@ -1,11 +1,11 @@
 import React from 'react';
-// import './styles.css';
+import './styles.css';
 
 export const OldPlayerSelect = (props) => {
   return (
     <div className="oldPlayersList">
       <h3>PAST PLAYERS</h3>
-      {props.oldPlayers.map((player, idx) =>
+      {props.oldPlayers.isLoading ? 'Loading...' : props.oldPlayers.players.map((player, idx) =>
         <button
           key={idx}
           onClick={(e) => props.onSelectPlayer(player)}

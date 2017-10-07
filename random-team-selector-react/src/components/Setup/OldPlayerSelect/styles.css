@@ -1,0 +1,12 @@
+.oldPlayersList button {
+  background-color: rgba(175, 35, 1, 0.4);
+  border: none;
+  color: #fff;
+  display: inline-block;
+  margin: 2px;
+  padding: 6px 10px; }
+  .oldPlayersList button:hover {
+    background-color: rgba(175, 35, 1, 0.6); }
+  .oldPlayersList button:disabled {
+    opacity: 0.75;
+    pointer-events: none; }
