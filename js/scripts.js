@@ -1,4 +1,4 @@
-//CREATE ALL OF THE VARIABLES 
+//CREATE ALL OF THE VARIABLES
 var input = document.getElementById("input");
 var submit = document.getElementById("submit");
 var output = document.getElementById("output");
@@ -9,9 +9,9 @@ var list = '';
 var list2 = '';
 var list3 = '';
 
-//SHUFFLE FUNCTION USED IN LOWDASH
-function shuffle(array) {
-    var counter = array.length;
+//SHUFFLE FUNCTION USED IN LOWDASH, this is called later
+function shuffle(arrayToShuffle) {
+    var counter = arrayToShuffle.length;
 
     // While there are elements in the array
     while (counter > 0) {
@@ -22,12 +22,12 @@ function shuffle(array) {
         counter--;
 
         // And swap the last element with it
-        var temp = array[counter];
-        array[counter] = array[index];
-        array[index] = temp;
+        var temp = arrayToShuffle[counter];
+        arrayToShuffle[counter] = arrayToShuffle[index];
+        arrayToShuffle[index] = temp;
     }
 
-    return array;
+    return arrayToShuffle;
 }
 
 //ADD THE USERS/PLAYERS
@@ -35,14 +35,14 @@ submit.addEventListener('click', function(e) { // watch the item called sumbit f
 
   e.preventDefault(); //no idea especially the e part
   myArray.push(input.value); //take the values from input and push it to myArray
-  output.innerHTML = myArray.toString(); //not sure
+  output.innerHTML = myArray.toString(); //add the input to the list called output and make sure it's a string
   input.value = ''; //empty the input field after all the above is complete
   list = '';
 
   for (var i = 0, l = myArray.length; i < l; i++) {
     list += '<li>' + myArray[i] + '</li>';
   }
-  
+
   output.innerHTML = list;
 
 });
@@ -51,23 +51,23 @@ submit.addEventListener('click', function(e) { // watch the item called sumbit f
 function myFunction() {
 
 	shuffle(myArray);
-	console.log(myArray);
+	//console.log(myArray);
 	var team1 = myArray.slice(0, myArray.length / 2);
 	var team2 = myArray.slice(myArray.length / 2, myArray.length)
-	console.log(team1);
-	console.log(team2);
+	//console.log(team1);
+	//console.log(team2);
 	list2 = '';
 	list3 = '';
 
 	for (var i = 0, l = team1.length; i < l; i++) {
     list2 += '<li><span class="glyphicon glyphicon-user"></span>' + team1[i] + '</li>';
   }
-	
+
 	teamRed.innerHTML = list2;
 
 	for (var i = 0, l = team2.length; i < l; i++) {
     list3 += '<li><span class="glyphicon glyphicon-user"></span>' + team2[i] + '</li>';
   }
-	
+
 	teamBlue.innerHTML = list3;
 };
