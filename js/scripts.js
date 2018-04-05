@@ -33,7 +33,7 @@ function shuffle(arrayToShuffle) {
 //ADD THE USERS/PLAYERS
 submit.addEventListener('click', function(e) { // watch the item called sumbit for a click event
 
-  e.preventDefault(); //no idea especially the e part
+  e.preventDefault(); //i think this prevents an empty player being added
   myArray.push(input.value); //take the values from input and push it to myArray
   output.innerHTML = myArray.toString(); //add the input to the list called output and make sure it's a string
   input.value = ''; //empty the input field after all the above is complete
