@@ -1,6 +1,8 @@
+@import "./variables";
+@import "./vendor/bootstrap";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,300,600,700);
 
-/* body and heading styles */
+/* body and text styles */
 
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -18,13 +20,15 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: 'Open Sans', sans-serif;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) { 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
   select,
   textarea,
   input {
     font-size: 16px;
   }
 }
+
+/* --- Header area --- */ 
 
 #brandTitle {
 	text-transform: uppercase;
@@ -52,7 +56,7 @@ h1,h2,h3,h4,h5,h6 {
 
 #headSection h1, #headSection h4, #enterNames, #teamColorRed, #teamColorBlue {
 	text-align: center;
-} 
+}
 
 #teamColorRed {
 	background-color: #fff;
@@ -109,15 +113,15 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: rgba(255, 255, 255, 0.5);  
+   color: rgba(255, 255, 255, 0.5);
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: rgba(255, 255, 255, 0.5); 
+   color: rgba(255, 255, 255, 0.5);
 }
 
-:-ms-input-placeholder {  
-   color: rgba(255, 255, 255, 0.5); 
+:-ms-input-placeholder {
+   color: rgba(255, 255, 255, 0.5);
 }
 
 .addingPlayers {
@@ -184,4 +188,3 @@ ol {
 .random:hover  {
 	color: #fa9376;
 }
-
