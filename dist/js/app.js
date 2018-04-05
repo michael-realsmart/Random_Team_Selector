@@ -2413,20 +2413,34 @@ submit.addEventListener('click', function(e) { // watch the item called sumbit f
 
   e.preventDefault(); //i think this prevents an empty player being added
   myArray.push(input.value); //take the values from input and push it to myArray
-  output.innerHTML = myArray.toString(); //add the input to the list called output and make sure it's a string
+  storePlayers(myArray);
+  //output.innerHTML = myArray.toString(); //add the input to the list called output and make sure it's a string
   input.value = ''; //empty the input field after all the above is complete
-  list = '';
-
-  for (var i = 0, l = myArray.length; i < l; i++) {
-    list += '<li>' + myArray[i] + '</li>';
-  }
-
-  output.innerHTML = list;
+  renderPlayerList();
 
 });
 
+//function to render players from an array
+function renderPlayerList() {
+  listHTML = '';
+
+  for (var i = 0, l = myArray.length; i < l; i++) {
+    listHTML += '<li>' + myArray[i] + '<span class="removePlayer" onclick="removePlayer('+ i + ')">&times;</span></li>';
+  }
+
+  output.innerHTML = listHTML;
+}
+
+//removePlayer FUNCTION
+function removePlayer(playerIndex) {
+  console.log(playerIndex);
+  myArray.splice(playerIndex, 1);
+  storePlayers(myArray);
+  renderPlayerList();
+}
+
 //SHUFFLE AND DISPLAY THE TWO TEAMS
-function myFunction() {
+function genrateTeams() {
 
 	shuffle(myArray);
 	//console.log(myArray);
@@ -2449,3 +2463,22 @@ function myFunction() {
 
 	teamBlue.innerHTML = list3;
 };
+
+// create/update a list of players in the users local storage
+function storePlayers(listOfPlayers) {
+  var players = JSON.stringify(listOfPlayers);
+  // Store
+  localStorage.setItem("previousPlayers", players);
+}
+
+// attempt to retreive a list from local storage on the users browser
+function getPlayers() {
+  var players = localStorage.getItem("previousPlayers");
+  if (players) {
+    myArray = JSON.parse(players);
+    renderPlayerList();
+  }
+  //console.log(players);
+}
+
+getPlayers();
