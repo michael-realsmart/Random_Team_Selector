@@ -13,6 +13,7 @@ var config = {
   sourceLocation: 'src',
 }
 
+//set up how gulp looks after the sass files from the sass folder then outputs CSS to dist
 gulp.task("sass", function(){
   return gulp.src('./src/sass/**/*.scss')
     .pipe(sass({
@@ -25,6 +26,7 @@ gulp.task("sass", function(){
     .pipe(livereload());
 });
 
+// set up how gulp treats the js files
 gulp.task('js', function() {
   return gulp.src(['./src/js/vendor/*.js', './src/js/*.js'])
     .pipe(concat('app.js'))
@@ -35,7 +37,7 @@ gulp.task('js', function() {
     .pipe(livereload());
 });
 
-
+//combine the SASS and JS functions into one task. the command in terminal is just "gulp" ctrl+c to quit 
 gulp.task("default", function(){
   livereload.listen();
   gulp.watch('./src/sass/**/*.scss', ["sass"]);
